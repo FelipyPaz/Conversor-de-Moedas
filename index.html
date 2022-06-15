@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Conversor de Moedas </h1>
+        </header>
+
+        <main>
+            <label>
+                Converter de
+                <select>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label>
+                Converter para
+                <select id="select">
+                    <option>US$ Dólar Americano</option>
+                    <option>€ Euro</option>
+                </select>
+            </label>
+            <label>
+                Valor
+                <input id="input-real" placeholder="R$ 1.000,00" />
+            </label>
+
+            <button id="button" type="button">Converter</button>
+
+            <section>
+                <div class="currecny-container">
+                    <img src="./assets/brasil 2.svg" alt="Bandeira-brasil" />
+                    <p class="currecny-name">Real</p>
+                    <p id="real-value-text" class="currecny-value">R$ 1.000,00</p>
+                </div>
+
+                <img id="img" src="./assets/Vector.svg" alt="Seta" />
+
+                <div class="currecny-container">
+                    <img id="secondImg" src="./assets/eua.svg" alt="Bandeira" />
+                    <p id="currecny-name" class="currecny-name">Dólar</p>
+                    <p id="currency-value-text" class="currecny-value">R$ 1.000,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="scripts.js"></script>
+
+</html>
